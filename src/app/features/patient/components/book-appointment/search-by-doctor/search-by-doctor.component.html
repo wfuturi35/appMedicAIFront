@@ -211,9 +211,9 @@
                 </div>
 
                 <div class="flex items-center gap-4 mb-4">
-                  <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden">
-                    <img ngSrc="'{{environment.apiPhoto}}/static/profile_pictures/' + selectedMedic?.profile_picture_url"
-                         alt="Doctor" class="w-full h-full object-cover" fill>
+                  <div class="w-12 h-12 relative">
+                    <img ngSrc="{{environment.apiPhoto}}/static/profile_pictures/{{selectedMedic!.profile_picture_url}}"
+                         alt="Doctor" class="rounded-full object-cover" fill>
                   </div>
                   <div>
                     <h4 class="font-bold text-lg">{{ selectedMedic?.full_name }}</h4>
